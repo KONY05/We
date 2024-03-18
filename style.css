@@ -10,6 +10,10 @@
     font-family: sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 /* Header Styling */
 header{
     height: 100px;
@@ -338,6 +342,9 @@ footer .footer_container .contact p{
 
 /* MEDIA QUERY */
 @media (min-width: 768px) {
+    body{
+        overflow: hidden;
+    }
     .banner{
         height: 533.69px;
     }
@@ -415,6 +422,9 @@ footer .footer_container .contact p{
 }
 
 @media (max-width: 430px){
+    body{
+        overflow: hidden;
+    }
     .invite, .form, .banner, .location, footer{
         padding-bottom: 20px;
         width: 433px;
