@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header Styling */
+header{
+    height: 100px;
+    padding: 0 10px;
+    
+}
+
+nav{
+    padding: 10px 0;
+    /* display: flex;
+    align-items: center; */
+} 
+
+nav img{
+    padding: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(32, 31, 31, 0.596);
+    height: 377.8px;
+    line-height: 70px;
+    color: #FFFFFF;
+    font-family: "Mulish", sans-serif;
+    background: url(wedding-2595862_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h1{
+    /* margin-top: -100px; */
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.banner p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Invite Styling*/
+.invite{
+    height: 280.39px;
+    background-color: #EAF1F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0 20px;
+}
+
+.invite_container{
+    /* border: 1px solid black; */
+    height: 287.45px;
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 45px;
+}
+
+.invite .invite_container h3{
+    font-size: 30px;
+    font-family: "Sacramento", sans-serif;
+    font-weight: 400;
+    color: #121f38;
+    /* line-height: 55px; */
+}
+
+#image2, #image3, #bigflower{
+    opacity: 0;
+    position: absolute;
+}   
+
+.mulish{
+    font-family: "Mulish", sans-serif;
+    color: #818491; 
+}
+
+#message{
+    font-size: 14px; 
+    line-height: 24px;
+    margin: 0 0 14.4px ;
+}
+
+#hashtag{
+    color: #C78665;
+    font-size: 21px;
+    font-family: "Sacramento", sans-serif;
+    margin: 8px 0;
+}
+
+.theme{
+    line-height: normal;
+}
+
+.theme h4{
+    font-family: "Cormorant", sans-serif;
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.theme p{
+    font-size: 14px;
+}
+
+/* Form Styling*/
+.form{
+    /* height: 723px; */
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    box-shadow: 0px 1px 5px 0.1px #bbb9b9;
+}
+
+.cormorant{
+    /* font-size: 16px; */
+    color: #C78665;
+    font-family: "Cormorant", sans-serif;
+}
+
+.form h2{
+    font-size: 28px;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    color: #121F38;
+}
+
+input{
+    color: grey;
+}
+
+.input_height{
+    height: 59px;
+    width: 100%;
+    border: none;
+}
+
+.input_height:focus{
+    outline: 1px solid grey;
+    animation-name: txt;
+    animation-duration: 0.5s;
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: ease-in; */
+}
+
+@keyframes txt{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.input_height::placeholder{
+    color: #c78665af;
+}
+
+.form_margin{
+    margin-bottom: 25px;
+    /* padding-left: 5px; */
+    /* border: 1px solid black; */
+}
+
+button{
+    font-size: 18px;
+    font-family: "Mulish", sans-serif;
+    color: #FFFFFF;
+    background-color: #C78665;
+    padding: 16px 64px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* transition:  #ffffff 0.5 ease; */
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color: #C78665;
+    border: 1px solid #C78665;
+}
+
+/* Location Styling */
+.location{
+    padding: 0 20px;
+}
+
+.location_container{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#flower{
+    max-width: 100%;
+    height: auto;
+}
+
+.location .location_container h3{
+    font-size: 24px;
+    font-family: "Mulish", sans-serif;
+    color: #121F38;
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+.events{
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.church, .reception, .afterparty{
+    padding: 10px 0;
+}
+
+.church, .reception{
+    margin-bottom: 25px;
+}
+
+.fa-calendar ,.fa-ring ,.fa-music{
+    font-size: 52px;
+    color: #C78665;
+    margin: 0 0 25px; 
+}
+
+.location .location_container .events .church h4, .location .location_container .events .reception h4, .location .location_container .events .afterparty h4{
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 8px 0 16px;
+}
+
+.location .location_container .events .church p, .location .location_container .events .reception p, .location .location_container .events .afterparty p{
+    color: #818491;
+    line-height: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+/* Footer Styling */
+
+footer{
+    background-color: #F4F8F9;
+    padding: 0 50px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.footer_container{
+    padding: 50px 0;
+}
+
+.quote, .color, .contact{
+    padding: 10px;
+}
+
+footer .footer_container .quote img{
+    margin-bottom: 25px;
+}
+
+footer .footer_container .quote p{
+    font-size: 21px;
+    font-style: italic;
+}
+
+.color h5, .contact h5{
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+    color: #121F38;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+footer .footer_container .color ul{
+    list-style: none;
+    color: #818491;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.aqua{
+   color: aqua;
+}
+
+.aqua_space{
+    padding-bottom: 11px;
+}
+
+.olive{
+    color: olive;
+}
+
+.olive_space{
+    margin-top: 11px;
+}
+
+footer .footer_container .contact p{
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+    color: #818491;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.fa-message{
+    color: #C78665;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+    .banner{
+        height: 533.69px;
+    }
+    .invite{
+        padding: 0 50px;
+        height: 857px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+    }
+    .invite_container{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 287.45px;
+        text-align: left;
+        height: 857px;
+        margin: 0 50px;
+        position: absolute;
+    }
+
+    #image2{
+        opacity: 1;
+        position: relative;
+        right: 85%;
+    }
+    
+    #image3{
+        opacity: 1;
+        position: relative;
+        top: 20%;
+        left: 7%;
+    }
+
+    #bigflower{
+        opacity: 1;
+        position: absolute;
+        top: -10%;
+        right: 35%;
+        transform: skew(-30deg, 20deg);
+    }
+
+    .location{
+        padding: 0 50px;
+    }
+
+    .location_container{
+        padding: 100px 0;
+    }
+
+    .events{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        /* gap: 25px; */
+        /* padding: 0; */
+    }
+    
+    .afterparty, .church, .reception{
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    .footer_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media (max-width: 430px){
+    .invite, .form, .banner, .location, footer{
+        padding-bottom: 20px;
+        width: 433px;
+        overflow: hidden;
+    }   
+}
